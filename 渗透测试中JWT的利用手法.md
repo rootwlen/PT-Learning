@@ -218,7 +218,9 @@ GET /admin/delete?username=carlos HTTP/1.1
 
 
 实验流程：
+
 Step 1：点击上方的"Access the lab"访问靶场环境
+
 https://0a9c00a8030ba77784d7b92d00cc0086.web-security-academy.net/
 
 
