@@ -86,7 +86,9 @@ Step 4：应用程序得到JWK
 
 Step 5：使用JWK验证用户JWS
 
+
 Step 6：验证通过则正常响应
+
 
 
 
