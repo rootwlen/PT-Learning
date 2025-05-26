@@ -2,9 +2,11 @@
 企业内部产品应用使用JWT作为用户的身份认证方式，在对应用评估时发现了新的关于JWT的会话安全带来的安全问题，后期再整理时又加入了之前遗留的部分JWT安全问题，至此汇总成一篇完整的JWT文章
 
 简单介绍
+
 JWT(JSON Web Token)是一种用于身份认证和授权的开放标准，它通过在网络应用间传递被加密的JSON数据来安全地传输信息使得身份验证和授权变得更加简单和安全，JWT对于渗透测试人员而言可能是一种非常吸引人的攻击途径，因为它们不仅是让你获得无限访问权限的关键而且还被视为隐藏了通往以下特权的途径，例如:特权升级、信息泄露、SQLi、XSS、SSRF、RCE、LFI等
 
 基础概念
+
 JWS：Signed JWT，签名过的JWT
 JWK：JWT的密钥，也就是我们常说的SECRET
 JWE：Encrypted JWT部分payload经过加密的JWT
@@ -15,6 +17,7 @@ X.509标准：X.509标准是密码学里公钥证书的格式标准，包括TLS/
 JWT(JSON Web Token)的结构由三部分组成，分别是Header、Payload和Signature，下面是每一部分的详细介绍和示例：
 
 Header
+
 Header包含了JWT使用的算法和类型等元数据信息，通常使用JSON对象表示并使用Base64编码，Header中包含两个字段：alg和typ
 alg(algorithm)：指定了使用的加密算法，常见的有HMAC、RSA和ECDSA等算法
 typ(type)：指定了JWT的类型，通常为JWT
