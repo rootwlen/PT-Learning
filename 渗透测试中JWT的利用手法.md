@@ -74,7 +74,9 @@ JWT的工作流程如下：
 JKU工作原理
 Step 1：用户携带JWS(带有签名的JWT)访问应用
 
+
 Step 2：应用程序解码JWS得到JKU字段
+
 
 Step 3：应用根据JKU访问返回JWK的服务器
 
