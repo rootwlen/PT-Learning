@@ -104,6 +104,7 @@ JWT(JSON Web Token)的签名验证过程主要包括以下几个步骤：
 验证信息：如果JWT的签名是有效的则需要对Payload中的信息进行验证，例如:可以验证JWT中的过期时间、发行者等信息是否正确，如果验证失败则说明JWT是无效的
 下面是一个使用JAVA进行JWT签名验证的示例代码：
 
+
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -152,11 +153,15 @@ public class JWTExample {
         }
     }
 }
+
 在上面的示例代码中使用jwt库进行JWT的签名和验证，首先构建了一个JWT，然后将其分离为Header、Payload和Signature三部分，使用parseClaimsJws函数对JWT进行解析和验证，从而获取其中的Payload中的信息并进行验证，最后如果解析和验证成功，则说明JWT是有效的，否则说明JWT是无效的，在实际应用中应该将SECRET_KEY替换为应用程序的密钥
 
+
 漏洞案例
+
 JWT库会通常提供一种验证令牌的方法和一种解码令牌的方法，比如:Node.js库jsonwebtoken有verify()和decode()，有时开发人员会混淆这两种方法，只将传入的令牌传递给decode()方法，这意味着应用程序根本不验证签名，而我们下面的使用则是一个基于JWT的机制来处理会话，由于实现缺陷服务器不会验证它收到的任何JWT的签名，如果要解答实验问题，您需要修改会话令牌以访问位于/admin的管理面板然后删除用户carlos，您可以使用以下凭据登录自己的帐户:wiener:peter
 靶场地址：https://portswigger.net/web-security/jwt/lab-jwt-authentication-bypass-via-unverified-signature
+
 
 演示步骤：
 Step 1：点击上方的"Access the Lab"访问靶场并登录账户
