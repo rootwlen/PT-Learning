@@ -156,6 +156,7 @@ public class JWTExample {
     }
 }
 
+
 在上面的示例代码中使用jwt库进行JWT的签名和验证，首先构建了一个JWT，然后将其分离为Header、Payload和Signature三部分，使用parseClaimsJws函数对JWT进行解析和验证，从而获取其中的Payload中的信息并进行验证，最后如果解析和验证成功，则说明JWT是有效的，否则说明JWT是无效的，在实际应用中应该将SECRET_KEY替换为应用程序的密钥
 
 
