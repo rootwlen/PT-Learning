@@ -80,7 +80,9 @@ Step 2：应用程序解码JWS得到JKU字段
 
 Step 3：应用根据JKU访问返回JWK的服务器
 
+
 Step 4：应用程序得到JWK
+
 
 Step 5：使用JWK验证用户JWS
 
