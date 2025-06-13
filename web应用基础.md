@@ -22,7 +22,8 @@
 
 浏览器(IE\Firefox)                                    web应用中间件(IIS、Apache....)           mysql、oracle.....
 
-客户端语言(html、javascript....)                  服务端语言(php、asp、jsp)                  SQL语言                                      
+客户端语言(html、javascript....)                  服务端语言(php、asp、jsp)                  SQL语言    
+
 
 #### 4、http协议
 
